@@ -53,19 +53,20 @@ public class PlayerGui {
 		frame.setLocationRelativeTo(null);
 		frame.getContentPane().setLayout(null);
 		
-		JButton startBtn = new JButton("Start");
-		startBtn.addActionListener(new ActionListener() {
+		JButton playBtn = new JButton("Play");
+		playBtn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				try {
 					Player p = new Player(new FileInputStream(songFile));
 					p.play();
 				} catch (Exception ex) {
-					ex.printStackTrace();
+					JOptionPane.showMessageDialog(null,"No file selected", "Error", JOptionPane.ERROR_MESSAGE);
+//					ex.printStackTrace();
 				}
 			}
 		});
-		startBtn.setBounds(6, 77, 281, 43);
-		frame.getContentPane().add(startBtn);
+		playBtn.setBounds(6, 77, 281, 43);
+		frame.getContentPane().add(playBtn);
 		
 		pathField = new JTextField();
 		pathField.setForeground(Color.LIGHT_GRAY);
