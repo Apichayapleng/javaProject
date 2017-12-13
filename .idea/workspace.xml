@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bbdad1f-36b2-4bd5-be4b-33d03471b83c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/jl1.0.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/jl1_0_1.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/project/com/company/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/project/com/company/createGuiPlayer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/project/com/intellij/uiDesigner/core/AbstractLayout.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/project/com/intellij/uiDesigner/core/DimensionInfo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/project/com/intellij/uiDesigner/core/GridConstraints.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/project/com/intellij/uiDesigner/core/GridLayoutManager.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/project/com/intellij/uiDesigner/core/HorizontalInfo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/project/com/intellij/uiDesigner/core/LayoutState.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/project/com/intellij/uiDesigner/core/Spacer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/project/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/project/com/intellij/uiDesigner/core/SupportCode.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/project/com/intellij/uiDesigner/core/Util.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/project/com/intellij/uiDesigner/core/VerticalInfo.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.iml" afterPath="$PROJECT_DIR$/project.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MusicMain/MusicPlayerGui.form" afterPath="$PROJECT_DIR$/src/MusicMain/MusicPlayerGui.form" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MusicMain/MusicPlayerGui.java" afterPath="$PROJECT_DIR$/src/MusicMain/MusicPlayerGui.java" />
     </list>
@@ -36,12 +20,12 @@
       <file leaf-file-name="MusicPlayerGui.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MusicMain/MusicPlayerGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="883">
-              <caret line="118" column="26" lean-forward="true" selection-start-line="118" selection-start-column="26" selection-end-line="118" selection-end-column="26" />
+            <state relative-caret-position="390">
+              <caret line="26" column="8" lean-forward="false" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="initializer##0;class#MusicPlayerGui#0" expanded="true" />
-                <element signature="initializer##0;class#MusicPlayerGui#0" expanded="true" />
+                <element signature="e#547#548#0" expanded="true" />
+                <element signature="e#595#596#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -91,8 +75,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="110" />
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="735" />
@@ -147,7 +130,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="252" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="171" />
     <property name="settings.editor.selected.configurable" value="project.propGUI" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -287,7 +270,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="642" y="0" width="638" height="800" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="735" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -296,14 +279,14 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25333333" sideWeight="0.5062696" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25333333" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28657618" sideWeight="0.4937304" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.061128527" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.059375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -383,8 +366,8 @@
           <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="initializer##0;class#MusicPlayerGui#0" expanded="true" />
-            <element signature="initializer##0;class#MusicPlayerGui#0" expanded="true" />
+            <element signature="e#547#548#0" expanded="true" />
+            <element signature="e#595#596#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -424,12 +407,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MusicMain/MusicPlayerGui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="883">
-          <caret line="118" column="26" lean-forward="true" selection-start-line="118" selection-start-column="26" selection-end-line="118" selection-end-column="26" />
+        <state relative-caret-position="390">
+          <caret line="26" column="8" lean-forward="false" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="initializer##0;class#MusicPlayerGui#0" expanded="true" />
-            <element signature="initializer##0;class#MusicPlayerGui#0" expanded="true" />
+            <element signature="e#547#548#0" expanded="true" />
+            <element signature="e#595#596#0" expanded="true" />
           </folding>
         </state>
       </provider>
