@@ -1,23 +1,30 @@
 package MusicMain;
 
-import java.awt.EventQueue;
-
-import javax.swing.JFrame;
-import javax.swing.UIManager;
-import javax.swing.JButton;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
-import javax.swing.JTextField;
 import java.awt.Color;
+import java.awt.EventQueue;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.File;
+import java.io.FileInputStream;
+
+import javax.swing.JButton;
+import javax.swing.JFileChooser;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+import javax.swing.JTextField;
+import javax.swing.UIManager;
+
+import javazoom.jl.player.Player;
+
+
 
 public class PlayerGui {
 
-	private JFrame frmPgsMpPlayer;
+	private JFrame frame;
 	private JTextField pathField;
-
-	/**
-	 * Launch the application.
-	 */
+	
+	private File songFile;
+	
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -26,7 +33,7 @@ public class PlayerGui {
 					UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 					
 					PlayerGui window = new PlayerGui();
-					window.frmPgsMpPlayer.setVisible(true);
+					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -34,43 +41,67 @@ public class PlayerGui {
 		});
 	}
 
-	/**
-	 * Create the application.
-	 */
 	public PlayerGui() {
 		initialize();
 	}
 
-	/**
-	 * Initialize the contents of the frame.
-	 */
 	private void initialize() {
-		frmPgsMpPlayer = new JFrame();
-		frmPgsMpPlayer.setTitle("PG’s mp3 Player");
-		frmPgsMpPlayer.setBounds(100, 100, 293, 164);
-		frmPgsMpPlayer.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frmPgsMpPlayer.setLocationRelativeTo(null);
-		frmPgsMpPlayer.getContentPane().setLayout(null);
+		frame = new JFrame();
+		frame.setTitle("PG’s mp3 Player");
+		frame.setBounds(100, 100, 293, 164);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setLocationRelativeTo(null);
+		frame.getContentPane().setLayout(null);
 		
 		JButton startBtn = new JButton("Start");
 		startBtn.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
+			public void actionPerformed(ActionEvent arg0) {
+				try {
+					Player p = new Player(new FileInputStream(songFile));
+					p.play();
+				} catch (Exception ex) {
+					ex.printStackTrace();
+				}
 			}
 		});
 		startBtn.setBounds(6, 77, 281, 43);
-		frmPgsMpPlayer.getContentPane().add(startBtn);
+		frame.getContentPane().add(startBtn);
 		
 		pathField = new JTextField();
 		pathField.setForeground(Color.LIGHT_GRAY);
 		pathField.setEditable(false);
 		pathField.setText("Song path\n");
 		pathField.setBounds(6, 36, 166, 26);
-		frmPgsMpPlayer.getContentPane().add(pathField);
+		frame.getContentPane().add(pathField);
 		pathField.setColumns(10);
 		
 		JButton openBtn = new JButton("Open");
+		openBtn.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				open();
+			}
+		});
 		openBtn.setBounds(170, 36, 117, 29);
-		frmPgsMpPlayer.getContentPane().add(openBtn);
+		frame.getContentPane().add(openBtn);
 		
+	}
+	
+	private void open() {
+		try {
+			JFileChooser chooser  = new JFileChooser();
+			chooser.setDialogTitle("Choose song to load..");
+			chooser.showOpenDialog(null);
+			songFile = chooser.getSelectedFile();
+//			System.out.println("File " + songFile.getName() + ", Selected");
+			pathField.setText(songFile.getAbsolutePath());
+			
+//			if(songFile.getName().endsWith(".mp3")) {
+////				JOptionPane.showMessageDialog(null,"Invalid File Type Selected","Error", JOptionPane.ERROR_MESSAGE);
+//				open();
+//			}
+			
+		} catch (Exception e1) {
+			e1.printStackTrace();
+		}
 	}
 }
