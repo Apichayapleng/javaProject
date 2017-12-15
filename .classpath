@@ -3,5 +3,8 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry exported="true" kind="lib" path="libs/jl1.0.1.jar"/>
+	<classpathentry kind="lib" path="libs/sun-jai_codec.jar"/>
+	<classpathentry kind="lib" path="libs/customizer.jar"/>
+	<classpathentry kind="lib" path="libs/jmf.jar"/>
 	<classpathentry kind="output" path="out/production/project"/>
 </classpath>

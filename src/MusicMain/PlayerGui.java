@@ -1,18 +1,22 @@
 package MusicMain;
 
+import java.util.*;
+import java.io.*;
+import java.net.URL;
 import java.awt.Color;
 import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.File;
-import java.io.FileInputStream;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.UIManager;
+import javax.swing.*;
+
 
 import javafx.scene.media.MediaPlayer;
 import javazoom.jl.player.Player;
@@ -27,7 +31,7 @@ public class PlayerGui {
 	
 	private File songFile;
 	private MediaPlayer mediaplayer;
-	public static void main(String[] args) {
+	public void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
@@ -67,7 +71,7 @@ public class PlayerGui {
 				}
 			}
 		});
-		playBtn.setBounds(63, 77, 80, 43);
+		playBtn.setBounds(61, 78, 177, 43);
 		frame.getContentPane().add(playBtn);
 		
 		pathField = new JTextField();
@@ -86,20 +90,6 @@ public class PlayerGui {
 		});
 		openBtn.setBounds(170, 36, 117, 29);
 		frame.getContentPane().add(openBtn);
-		
-		JButton stopBtn = new JButton("Stop");
-		stopBtn.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				try {
-//					mediaplayer.stop();
-					break;
-				} catch (Exception e2) {
-					e2.printStackTrace();
-				}
-			}
-		});
-		stopBtn.setBounds(144, 77, 81, 43);
-		frame.getContentPane().add(stopBtn);
 		
 	}
 	
